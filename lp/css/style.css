@@ -17,8 +17,11 @@
 
     /* Colors */
     --turqueza: #27e8dc;
+    --tuqueza-transp: #27e8db6e;
     --azul: #0e3262;
     --roxo: #4a26a3;
+    --fundo: #061c3acc;
+
 
 
     /* Gaps */
@@ -48,8 +51,39 @@ body {
     margin: 0;
     line-height: normal;
     font: 'Inter', Arial, sans-serif;
+    background-color: var(--fundo);
 }
-#topo{
-    background-image: url('imagens/Fundo Mongeta.jpg');
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+    max-width: 1920px;
+    min-width: 300px;
+    margin: auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--tuqueza-transp);
+    box-shadow: 0px 0px 10px 0px #000000;
+    height: 150px;
+}
+img#tela{
+    width: 100%;
+}
+section#topo{
+    background-image: url('lp/imagens/Fundo Mongeta.jpg');
+}
+section#base{
+    background-image: -moz-linear-gradient(bottom, var(--azul) 50%, var(--roxo) 50%);
 }
 
